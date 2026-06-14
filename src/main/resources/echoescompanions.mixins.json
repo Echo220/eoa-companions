@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.echoesofaegis.companions.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "mixins": [
+    "MonsterSleepMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "echoes_companion_beds",
+  "ingredients": [
+    "minecraft:red_bed",
+    "minecraft:stick",
+    "minecraft:black_dye"
+  ],
+  "result": {
+    "id": "minecraft:black_bed",
+    "count": 1,
+    "components": {
+      "minecraft:custom_data": {
+        "echoes_companion_item": "echoes_companion_bed",
+        "bed_color": "black"
+      },
+      "minecraft:custom_name": {
+        "text": "Little Companion Bed",
+        "color": "aqua",
+        "italic": false
+      },
+      "minecraft:lore": [
+        {
+          "text": "A normal bed scaled for your companion.",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": "Place it on the ground to set a rest spot.",
+          "color": "yellow",
+          "italic": false
+        }
+      ]
+    }
+  }
+}

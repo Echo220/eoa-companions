@@ -1,0 +1,47 @@
+# Gradle and Java build output
+**/.gradle/
+**/build/
+**/out/
+**/target/
+**/run/
+*.class
+
+# Local toolchains and generated scratch work
+.tools/
+**/.tools/
+**/jdk25/
+**/microsoft-jdk-*-windows-*.zip
+**/temurin-jdk*.zip
+**/jdk25.zip
+**/gradle-*-bin.zip
+tmp/
+**/tmp/
+
+# Local server/runtime data
+world/
+world_nether/
+world_the_end/
+logs/
+crash-reports/
+config/
+server.properties
+ops.json
+whitelist.json
+banned-*.json
+usercache.json
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+
+# IDE and OS noise
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# JVM diagnostics
+hs_err_pid*
+replay_pid*

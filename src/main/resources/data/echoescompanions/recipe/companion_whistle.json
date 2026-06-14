@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "tools",
+  "ingredients": [
+    "minecraft:copper_ingot",
+    "minecraft:amethyst_shard",
+    "minecraft:string"
+  ],
+  "result": {
+    "id": "minecraft:goat_horn",
+    "count": 1,
+    "components": {
+      "minecraft:custom_data": {
+        "echoes_companion_item": "echoes_companion_whistle"
+      },
+      "minecraft:custom_name": {
+        "text": "Companion Whistle",
+        "color": "aqua",
+        "italic": false
+      },
+      "minecraft:lore": [
+        {
+          "text": "Right-click to recall your companion.",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": "Sneak-right-click to recall and open its menu.",
+          "color": "yellow",
+          "italic": false
+        }
+      ]
+    }
+  }
+}

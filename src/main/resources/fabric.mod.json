@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "echoescompanions",
+  "version": "${version}",
+  "name": "Echoes of Aegis: Companions",
+  "description": "Adds server-side friendly tiny humanoid companions that can be tamed with dropped food, equipped, stored, recalled, and commanded.",
+  "authors": [
+    "Echoes of Aegis"
+  ],
+  "license": "MIT",
+  "icon": "assets/echoescompanions/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.echoesofaegis.companions.EchoesCompanionsMod"
+    ]
+  },
+  "mixins": [
+    "echoescompanions.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "${minecraft_version}",
+    "java": ">=25",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "echoeshub": "*",
+    "echoesclaims": "*",
+    "echoescrates": "*"
+  }
+}
