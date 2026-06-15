@@ -42,6 +42,7 @@ Server-side friendly Fabric `26.1.2` mod for tiny humanoid companions.
 - Claim-aware combat is conservative by default: companions do not target players unless player targeting is enabled and the target is allowed by claim/war rules.
 - Neutral mobs, such as calm zombified piglins, are ignored until they are actively angry at the owner or companion.
 - Non-hostile mobs, such as llamas, are calmed if they target a companion because of the hidden vanilla host body.
+- Villagers, wandering traders, llamas, and other avoidant mobs no longer treat tagged companions as hostile scare sources.
 - Guard Claim anchors the companion to the spot where the role is selected, patrols the guarded claim chunk when EchoesClaims is present, and falls back to patrolling around the guard post outside claims.
 - Recall preserves the companion's current health, and saved-data rebuilds no longer come back at vanilla zombie health.
 - Food held in either hand now heals first, so feeding cannot accidentally toggle companion roles or open the menu.
@@ -137,7 +138,7 @@ Natural companion spawns are server-driven and configurable in `config/echoescom
 
 Echoes Companions avoids custom entity types so players do not need a client mod. Companions use an AI-suppressed vanilla tiny humanoid body with separated arms, scale, tags, player heads, armor, gear, names, saved equipment, storage, recall, and custom server behavior. Vanilla hostile goals are removed and vanilla attack damage is forced to zero, while companion defense and duels use controlled server-side damage.
 
-Tagged companions do not count as sleep-blocking monsters for bed checks. Their vanilla zombie sounds stay muted, and the server plays occasional higher-pitched villager-style chirps instead.
+Tagged companions do not count as sleep-blocking monsters for bed checks, and vanilla avoid/hostile-sensor AI ignores them so villagers, wandering traders, llamas, and similar mobs do not panic around a bonded Little Wanderer. Their vanilla zombie sounds stay muted, and the server plays occasional higher-pitched villager-style chirps instead.
 
 Storage persistence uses Minecraft's registry-aware `ItemStack` codec, so enchantments, names, lore, trims, durability, and modded item components are preserved when the companion inventory is saved.
 

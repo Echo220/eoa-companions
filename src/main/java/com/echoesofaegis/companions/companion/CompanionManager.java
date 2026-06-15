@@ -152,8 +152,12 @@ public final class CompanionManager {
         return configManager.config();
     }
 
+    public static boolean hasCompanionTag(Entity entity) {
+        return entity != null && entity.entityTags().contains(TAG_COMPANION);
+    }
+
     public boolean isCompanion(Entity entity) {
-        return entity instanceof Mob && entity.entityTags().contains(TAG_COMPANION);
+        return entity instanceof Mob && hasCompanionTag(entity);
     }
 
     public Optional<Mob> findNearestOwned(ServerPlayer player, double radius) {

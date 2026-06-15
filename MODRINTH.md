@@ -46,7 +46,7 @@ Players do not need to install a client mod. The companion uses vanilla server-s
 - Little Companion Beds with color crafting.
 - Defeated companions become Little Companion Eggs and revive after a configurable real-world timer.
 - Portal-follow, home/warp catch-up, boat riding, multi-seat mount riding, and safer elytra/fall handling.
-- Conservative targeting: companions ignore calm neutral mobs and calm non-hostile mobs that accidentally target them.
+- Conservative targeting: companions ignore calm neutral mobs, calm non-hostile mobs that accidentally target them, and are ignored by vanilla avoid/hostile-sensor AI.
 - Optional companion duels.
 - Optional EchoesClaims-aware Guard Claim behavior.
 - Optional EchoesSidebar placeholders for companion duel stats.
@@ -55,7 +55,7 @@ Players do not need to install a client mod. The companion uses vanilla server-s
 
 1. Install Fabric Loader for Minecraft 26.1.2.
 2. Install Fabric API for Minecraft 26.1.2.
-3. Put `echoescompanions-1.0.28.jar` in the server `mods` folder.
+3. Put `echoescompanions-1.0.29.jar` in the server `mods` folder.
 4. Start the server once to generate `config/echoescompanions.json`.
 5. Adjust config values if needed, then restart or use `/companions reload`.
 
@@ -123,6 +123,17 @@ Optional integrations:
 Known visual note:
 
 The companion uses a vanilla-backed tiny humanoid host with a player head and visible gear. A full custom player-skin body would require a client-side renderer or a more complex resource-pack/display-entity visual layer.
+
+## Version 1.0.29 Release Notes
+
+This release keeps Little Wanderers from frightening nearby passive village mobs.
+
+Highlights:
+
+- Villagers and village-style hostile sensors now ignore tagged Echoes companions as hostile scare sources.
+- Wandering traders, llamas, and other avoidant mobs stop fleeing from tagged companions through vanilla avoid-goal checks.
+- Existing sleep, sound, recall, gear, and combat behavior is unchanged.
+- Server-side friendly design with no required client install.
 
 ## Version 1.0.28 Release Notes
 
